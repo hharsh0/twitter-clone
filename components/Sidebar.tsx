@@ -13,9 +13,9 @@ import SideBarRow from './SideBarRow'
 
 export default function Sidebar() {
   return (
-    <div className="flex flex-col col-span-2">
+    <div className="flex flex-col col-span-2 items-center px-4 md:items-start">
       <img
-        className="h-10 w-10"
+        className="h-10 w-10 m-3"
         src="https://links.papareact.com/drq"
         alt="twitter-logo"
       />
