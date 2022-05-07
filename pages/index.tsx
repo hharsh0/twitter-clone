@@ -6,9 +6,9 @@ import Widgets from '../components/Widgets'
 
 const Home: NextPage = () => {
   return (
-    <div className="lg:max-w-6xl mx-auto">
+    <div className="lg:max-w-6xl mx-auto max-h-screen overflow-hidden">
       <Head>
-        <title>Twitter 2.0</title>
+        <title>Twitter clone</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -25,5 +25,6 @@ const Home: NextPage = () => {
     </div>
   )
 }
+
 
 export default Home

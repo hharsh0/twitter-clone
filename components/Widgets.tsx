@@ -1,5 +1,5 @@
 import { SearchIcon } from '@heroicons/react/outline'
-import React from 'react'
+import React,{useState} from 'react'
 import {
   TwitterTimelineEmbed,
   TwitterShareButton,
@@ -14,6 +14,7 @@ import {
 } from 'react-twitter-embed'
 
 function Widgets() {
+  const [search, setSearch] = useState('elonmusk')
   return (
     <div className="mt-2 px-2 col-span-2 hidden lg:inline">
       <div className="mt-2 flex items-center space-x-2 rounded-full bg-gray-100 p-3">
@@ -26,7 +27,7 @@ function Widgets() {
       </div>
       <TwitterTimelineEmbed
         sourceType="profile"
-        screenName="elonmusk"
+        screenName={search}
         options={{ height: 1000 }}
       />
     </div>
