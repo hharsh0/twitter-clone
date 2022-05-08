@@ -32,7 +32,7 @@ function TweetBox({data, setData}:any) {
     // tweetInput.tweet = input
     console.log(tweetInput)
     setInput('')
-    setData(prevTweet => {
+    setData((prevTweet: any) => {
       return [tweetInput, ...prevTweet ]
     })
     event.preventDefault()
