@@ -1,7 +1,7 @@
 import React from 'react'
 
 interface Props {
-  Icon: (props: SVGProps<SVGSVGElement>) => JSX.Element
+  Icon: (props: any) => JSX.Element
   title: string
 }
 
